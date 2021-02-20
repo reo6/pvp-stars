@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+.stick-font {
+    font-family: 'Stick', sans-serif !important;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
 .App {
   text-align: center;
 }
