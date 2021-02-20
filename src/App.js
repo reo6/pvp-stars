@@ -1,20 +1,30 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-    Form,
-    Button,
-} from "react-bootstrap";
 import React from "react";
+import Start from "./components/Start.jsx";
 
-function App() {
-  return (
-    <div className="App">
-        <main className="AppHeader">
-            <h1 className="stick-font display-3">Welcome to PvP Game!</h1>
-            <p>Just type your nickname to start playing!</p>
-        </main>
-    </div>
-  );
+
+class App extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            activeItem: Start,
+        }
+
+        this.setActive = this.setActive.bind(this);
+    }
+
+    render() {
+        return (
+            <this.state.activeItem set_active={this.setActive}/>
+        )
+    }
+
+    setActive(target) {
+        this.setState({
+            activeItem: target,
+        })
+    }
 }
 
 export default App;
