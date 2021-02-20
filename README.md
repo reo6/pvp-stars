@@ -1,3 +1,3 @@
 # PvP Game
 
-PvP Game Swords and Sandals like.
+PvP Game like Swords and Sandals
