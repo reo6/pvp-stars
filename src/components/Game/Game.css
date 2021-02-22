@@ -31,3 +31,22 @@ body {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,76,117,1) 49%, rgba(2,0,36,1) 100%) !important; 
     color: white;
 }
+
+button.minus {
+  float: left;
+  padding: 8px 14px;
+  background: #f1f1f1;
+  margin-right: 5px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+}
+button.plus {
+  float: left;
+  padding: 11px 14px;
+  background: #f1f1f1;
+  margin-right: 5px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
