@@ -6,3 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.stick-font {
+    font-family: 'Stick', sans-serif !important;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+}

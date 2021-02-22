@@ -26,6 +26,7 @@ export default class Start extends React.Component {
                 <main className="App-main">
                     <h1 className="stick-font display-3">Welcome to PvP Game!</h1>
                     <p className="display-5">Just type your nickname to start playing!</p>
+                    <small>Warning: Don't reload page while playing.</small>
 
                     <Container>
                         <Form>
@@ -42,6 +43,8 @@ export default class Start extends React.Component {
                                 </Button>
                             </Form.Group>
                         </Form>
+
+
                     </Container>
                 </main>
             </div>
