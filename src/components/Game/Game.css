@@ -32,21 +32,14 @@ body {
     color: white;
 }
 
-button.minus {
-  float: left;
-  padding: 8px 14px;
-  background: #f1f1f1;
-  margin-right: 5px;
-  border: 1px solid #ddd;
-  border-radius: 50%;
-  font-size: 20px;
-  font-weight: bold;
+.number-button {
+    margin: 5px;
 }
-button.plus {
-  float: left;
-  padding: 11px 14px;
-  background: #f1f1f1;
-  margin-right: 5px;
-  border: 1px solid #ddd;
-  border-radius: 50%;
+
+hr {
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.btn {
+    margin: 5px;
 }

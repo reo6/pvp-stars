@@ -38,7 +38,7 @@ export default class Start extends React.Component {
                                     onChange={(e) => this.nicknameChanged(e.target.value)}
                                     isInvalid={this.state.invalid}
                                 />
-                                <Button variant="info" type="button" onClick={this.submitForm}>
+                                <Button variant="dark" type="button" onClick={this.submitForm}>
                                     Let's Gooo!
                                 </Button>
                             </Form.Group>
