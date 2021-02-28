@@ -38,6 +38,7 @@ export default class Game extends React.Component {
                             setEnemySection={(v) => this.setState({enemySection: v})}
                             setPlayerSection={(v) => this.setState({playerSection: v})}
                             setMainSection={(v) => this.setState({mainSection: v})}
+                            setStateSection={(nv) => this.setState({"stateSection": nv})}
                         />
 
                     </div>
