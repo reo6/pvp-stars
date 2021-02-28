@@ -27,19 +27,7 @@ footer {
 }
 
 body {
-    background: rgb(2,0,36) !important;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,76,117,1) 49%, rgba(2,0,36,1) 100%) !important; 
-    color: white;
+    background-color: #433520 !important;
+    color: white !important;
 }
 
-.number-button {
-    margin: 5px;
-}
-
-hr {
-    border-top: 1px solid rgb(255, 255, 255);
-}
-
-.btn {
-    margin: 5px;
-}

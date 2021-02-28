@@ -8,8 +8,7 @@
 }
 
 .App-main {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,76,117,1) 49%, rgba(2,0,36,1) 100%); 
+    background-color: #433520 !important;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

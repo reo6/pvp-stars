@@ -14,3 +14,54 @@ body {
 * {
     font-family: 'Lato', sans-serif;
 }
+
+.number-button {
+    margin: 5px;
+}
+
+hr {
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.btn {
+    margin: 5px;
+}
+
+/*Buttons*/
+.btn-dark {
+    color: #FFF !important;
+    background-color: #1687a7 !important;
+    border-color: #0f6a83 !important;
+}
+
+.btn-dark:hover {
+    color: #FFF;
+    background-color: #0d6881;
+    border-color: #0d5d74
+}
+
+.btn-dark:focus,
+.btn-dark.focus {
+    box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+}
+
+.btn-dark.disabled,
+.btn-dark:disabled {
+    color: #212529;
+    background-color: #7cc;
+    border-color: #5bc2c2
+}
+
+.btn-dark:not(:disabled):not(.disabled):active,
+.btn-dark:not(:disabled):not(.disabled).active,
+.show>.btn-dark.dropdown-toggle {
+    color: #212529;
+    background-color: #9cdada;
+    border-color: #2e7c7c
+}
+
+.btn-dark:not(:disabled):not(.disabled):active:focus,
+.btn-dark:not(:disabled):not(.disabled).active:focus,
+.show>.btn-dark.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+}
