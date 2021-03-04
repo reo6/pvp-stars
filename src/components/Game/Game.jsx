@@ -1,9 +1,7 @@
 import React from "react";
-import "./Game.css";
-import {
-    Container,
-} from "react-bootstrap";
 import SkillPoints from "./SkillPoints";
+import "./Game.css";
+
 
 export default class Game extends React.Component {
     state = {

@@ -54,7 +54,7 @@ export default class SkillPoints extends React.Component {
             <Col>
                 <Alert
                     show={this.state.showAlert}
-                    variant="danger"
+                    variant="dark"
                     dismissible
                     onClose={() => this.setState({showAlert: false})}
                 >
@@ -109,7 +109,9 @@ export default class SkillPoints extends React.Component {
                 showAlert: true,
             })
         } else {
-            this.props.setMainSection(MainGame);
+            this.props.setMainSection((
+                <MainGame sps={this.state.sps}/>
+            ));
         }
     }
 }

@@ -24,7 +24,7 @@ export default class Start extends React.Component {
         return (
             <div className="App">
                 <main className="App-main">
-                    <h1 className="stick-font display-3">Welcome to PvP Game!</h1>
+                    <h1 className="stick-font display-3">Welcome to PvP Stars!</h1>
                     <p className="display-5">Just type your nickname to start playing!</p>
                     <small>Warning: Don't reload page while playing.</small>
 
@@ -63,7 +63,9 @@ export default class Start extends React.Component {
                 invalid: true,
             })
         } else {
-            this.props.set_active(Game);
+            this.props.set_active(
+                <Game nickname={this.state.nickname}/>
+            );
         }
     }
 
