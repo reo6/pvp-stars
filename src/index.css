@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(./img/dark_wood.png) repeat;
+  color: #c0c0c0 !important;
 }
 
 .stick-font {
@@ -20,7 +22,7 @@ body {
 }
 
 hr {
-    border-top: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid #c0c0c0 !important;
 }
 
 .btn {
@@ -30,8 +32,8 @@ hr {
 /*Buttons*/
 .btn-dark {
     color: #FFF !important;
-    background-color: #1687a7 !important;
-    border-color: #0f6a83 !important;
+    background-color: #000000 !important;
+    border-color: #161414 !important;
 }
 
 .btn-dark:hover {
@@ -64,4 +66,22 @@ hr {
 .btn-dark:not(:disabled):not(.disabled).active:focus,
 .show>.btn-dark.dropdown-toggle:focus {
     box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+}
+
+.form-control {
+    background-color: #121111 !important;
+    border: solid 2px #110f0f !important;
+    color: #b8b8b8 !important;
+}
+
+.form-control:focus {
+    border-color: #3b3b3b !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.alert-dark {
+    background-color: black !important;
+    color: #c0c0c0 !important;
+    border: solid 2px #110f0f !important;
 }
