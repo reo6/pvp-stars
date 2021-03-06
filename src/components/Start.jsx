@@ -6,20 +6,17 @@ import {
 } from "react-bootstrap";
 import "../App.css";
 import Game from "./Game/Game";
+import {
+    ActiveCompContext,
+} from "../index.js";
+
 
 export default class Start extends React.Component {
     state = {
         nickname: "",
         invalid: false,
     }
-
-    constructor() {
-        super()
-
-        this.submitForm = this.submitForm.bind(this);
-        this.nicknameChanged = this.nicknameChanged.bind(this);
-    }
-
+    
     render() {
         return (
             <div className="App">
@@ -63,11 +60,12 @@ export default class Start extends React.Component {
                 invalid: true,
             })
         } else {
-            this.props.set_active(
+            this.context.setActiveComp(
                 <Game nickname={this.state.nickname}/>
             );
         }
     }
 
-
 }
+
+Start.contextType = ActiveCompContext;

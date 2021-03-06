@@ -1,30 +1,24 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import React from "react";
-import Start from "./components/Start.jsx";
+import {
+    ActiveCompContext
+} from "./index";
+import {
+    observer,
+} from "mobx-react-lite";
+import { toJS } from "mobx";
 
 
-class App extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            activeItem: Start,
-        }
-
-        this.setActive = this.setActive.bind(this);
-    }
-
-    render() {
-        return (
-            <this.state.activeItem set_active={this.setActive}/>
-        )
-    }
-
-    setActive(target) {
-        this.setState({
-            activeItem: target,
-        })
-    }
+function App() {
+    return (
+        <ActiveCompContext.Consumer>
+            {function(value) {
+                return React.createElement.apply(null, value.activeComp);
+            }}
+        </ActiveCompContext.Consumer>
+    )
 }
 
-export default App;
+
+export default observer(App);
